@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Clover Paradise</string>
+
+    <string name="fb_id">603196618096431</string>
+    <string name="client_token">0349acd063350870a5bd5a949f39ca52</string>
+
+    <string name="onesignal_id">fd541436-2cf1-46de-9e5c-b3c7eb70a44a</string>
+    <string name="af_key">5MuGCruZRsCzEYfjaq7vad</string>
+    <string name="url">https://bananaclass.me/cloverparadise.php</string>
+    <string name="url_tiny">https://bananaclass.me/</string>
+
+    <string name="sec_param">n2iD7tbu06</string>
+    <string name="sec">V5qXD6Nh5H</string>
+    <string name="tmz">yb6CWwezbo</string>
+    <string name="advId">xbDarGoBal</string>
+    <string name="fb">KnAKjBA7X8</string>
+    <string name="src">0yEuZYTgha</string>
+    <string name="apps_id">YVycet0qCw</string>
+    <string name="adset_id">onqC8UyUlD</string>
+    <string name="campaign">HHBvxMVvUP</string>
+    <string name="app_campaign">L77Cn96NAf</string>
+    <string name="adset">b1l7CMEb7E</string>
+    <string name="adgroup">Kqah3znNkR</string>
+    <string name="orig_cost">atWKnX5UdJ</string>
+    <string name="af_siteid">diKFno8nRQ</string>
+    <string name="toss_a_coin">Toss a coin</string>
+    <string name="press_to_flip">press to flip</string>
+    <string name="play_again">Play again</string>
+    <string name="your_score_0_10">Your score 0/10</string>
+    <string name="opponent_s_score_0_10">Opponent\'s score 0/10</string>
+</resources>

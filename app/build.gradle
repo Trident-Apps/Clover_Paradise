@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+//    id 'org.greenrobot.greendao'
+}
+
+android {
+    namespace 'com.arcsys.tictacto'
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.arcsys.tictacto"
+        minSdk 24
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    //WorkManager
+    implementation 'androidx.work:work-runtime-ktx:2.7.1'
+
+    //Fb SDK
+    implementation 'com.facebook.android:facebook-android-sdk:14.1.0'
+
+    //OneSignal
+    implementation 'com.onesignal:OneSignal:[4.0.0, 4.99.99]'
+
+    //AppsFlyer
+    implementation 'com.appsflyer:af-android-sdk:6.7.0'
+
+    //Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.3'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.3"
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+
+    //Google Advertising ID
+    implementation 'com.google.android.gms:play-services-ads-identifier:18.0.1'
+
+    //DaggerHilt
+    implementation "com.google.dagger:hilt-android:2.44"
+    kapt "com.google.dagger:hilt-compiler:2.44"
+
+    //urlTiny
+    implementation 'net.moznion:uribuilder-tiny:2.7.1'
+
+    //DataStore
+    implementation "androidx.datastore:datastore-preferences:1.0.0"
+
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.fragment:fragment-ktx:1.5.5'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+}
+kapt {
+    correctErrorTypes true
+}
